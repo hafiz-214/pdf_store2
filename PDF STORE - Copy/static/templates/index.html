@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the PDF Store</h1>
+    </header>
+
+    <div class="product-list">
+        {% for pdf in pdf_files %}
+            <div class="product">
+                <h3>{{ pdf.name }}</h3>
+                <p>Price: ${{ pdf.price }}</p>
+                <form action="{{ url_for('purchase', filename=pdf.filename) }}" method="POST">
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PDF Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.purchase-success {
+    padding: 20px;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+}

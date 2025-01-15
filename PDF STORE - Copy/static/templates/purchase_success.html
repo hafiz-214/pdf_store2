@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Thank You for Your Purchase!</h1>
+    </header>
+
+    <div class="purchase-success">
+        <h2>Your PDF is ready for download</h2>
+        <a href="{{ url_for('download_pdf', filename=filename) }}" class="download-btn">Download PDF</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PDF Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
